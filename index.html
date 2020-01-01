@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A-Frame Google Poly Component - Basic</title>
+    <meta name="description" content="Basic example for Google Poly component."></meta>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="../../dist/aframe-google-poly-component.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-simple-sun-sky@^1.2.2/simple-sun-sky.js"></script>
+  </head>
+  <body>
+    <a-scene  google-poly="api_key: AIzaSyBgWCXJTFmgi-WroEETbW3ywzD8usck4UY">
+      <!-- <a-entity google-poly="src: bQhStTXcoWe"         
+      position="0 20 0"
+      rotation="0 0 0 "
+      scale="2 2 2"></a-entity>
+      <a-entity google-poly="src: bQhStTXcoWe"         
+      position="0 23 0"
+      rotation="180 180 0 "
+      scale="2 2 2"></a-entity> -->
+      <a-entity google-poly="src: adoP7kR7S17"
+      position="0 0 0 "
+      rotation="0 180 0"
+      scale="0.1 0.1 0.1"></a-entity>
+      <a-entity google-poly="src: 2CrZCyeieXI"
+      position="3 -0.1 -4 "
+      rotation="0 0 0"
+      scale="0.1 0.1 0.1"
+      animation="property: position; from: 3 -0.2 -4; to: 3 -0.3 -4; dur: 2500; easing: easeOutBack; loop: true;"></a-entity>
+      <a-camera wasd-controls-enabled="false" position="0 3 0"></a-camera>
+      <a-simple-sun-sky sun-position="0.7 0.4 -1"></a-simple-sun-sky>
+<a-entity light="type: ambient; color: #BBB"></a-entity>
+<a-entity light="type: directional; color: #FFF; intensity: 0.6" position="0.7 0.4 -1"></a-entity>
+
+<a-ocean width="75" depth="75"></a-ocean>
+<a-input position="-0.7 1 -2.5" placeholder="Username" color="black" width="1"></a-input>
+    </a-scene>
+
+  </body>
+</html>
